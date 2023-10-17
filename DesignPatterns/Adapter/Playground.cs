@@ -29,7 +29,7 @@ namespace Adapter
         // OUTRAS MANEIRAS DE RESOLVER O PROBLEMA?
         /* Mapper. Decorator */
 
-        #region Exemplo 1
+        #region Classes
 
         public interface IConversorComprovante_Tipo990
         {
@@ -98,6 +98,22 @@ namespace Adapter
             }
         }
 
+        public class ConversorComprovanteAdaptado_Tipo990 : IConversorComprovante_Tipo990
+        {
+            public ComprovantePagamento_Tipo990 Converter(string linhaArquivo)
+            {
+                List<string> valores = linhaArquivo.Split('|').ToList();
+
+                ComprovantePagamento_Tipo990 novoComprovante = new()
+                {
+                    DataPagamento = DateOnly.ParseExact(valores[0], "yyyyMMdd", CultureInfo.InvariantCulture),
+                    NomePagador = valores[1],
+                    Email = valores[2],
+                    Valor = decimal.Parse(valores[4])
+                };
+                return novoComprovante;
+            }
+        }
         #endregion
 
         static void Main(string[] args)
@@ -151,22 +167,6 @@ namespace Adapter
             servicoEmail.EnviarEmail(valorPago_6);
             Console.WriteLine();
             #endregion
-        }
-        public class ConversorComprovanteAdaptado_Tipo990 : IConversorComprovante_Tipo990
-        {
-            public ComprovantePagamento_Tipo990 Converter(string linhaArquivo)
-            {
-                List<string> valores = linhaArquivo.Split('|').ToList();
-
-                ComprovantePagamento_Tipo990 novoComprovante = new()
-                {
-                    DataPagamento = DateOnly.ParseExact(valores[0], "yyyyMMdd", CultureInfo.InvariantCulture),
-                    NomePagador = valores[1],
-                    Email = valores[2],
-                    Valor = decimal.Parse(valores[4])
-                };
-                return novoComprovante;
-            }
         }
     }
 }

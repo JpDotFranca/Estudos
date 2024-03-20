@@ -11,7 +11,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Estruturais", "Estruturais"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Comportamentais", "Comportamentais", "{E9925405-5B14-4773-B252-0CA6041AD91B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prototype", "Prototype\Prototype.csproj", "{7DD52359-CD5D-47E1-855B-12483A6C7C68}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7DD52359-CD5D-47E1-855B-12483A6C7C68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DD52359-CD5D-47E1-855B-12483A6C7C68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DD52359-CD5D-47E1-855B-12483A6C7C68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DD52359-CD5D-47E1-855B-12483A6C7C68}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
@@ -19,6 +31,7 @@ Global
 		{DA462E0F-CA45-4D6E-A994-96A15E4A7CBD} = {F7BF310E-AA8A-41EC-8F59-266F262F431A}
 		{D9A5975B-A96D-4F52-8D30-749093E9E669} = {F7BF310E-AA8A-41EC-8F59-266F262F431A}
 		{E9925405-5B14-4773-B252-0CA6041AD91B} = {F7BF310E-AA8A-41EC-8F59-266F262F431A}
+		{7DD52359-CD5D-47E1-855B-12483A6C7C68} = {DA462E0F-CA45-4D6E-A994-96A15E4A7CBD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {82575255-E1E1-4F44-B5DA-97AF161C1327}

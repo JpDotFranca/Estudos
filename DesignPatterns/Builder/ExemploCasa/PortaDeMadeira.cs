@@ -1,4 +1,4 @@
-﻿namespace Builder.Casa;
+﻿namespace Builder;
 
 public class PortaDeMadeira : IPorta
 {

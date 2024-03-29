@@ -1,4 +1,4 @@
-﻿namespace Builder.Casa.Casa;
+﻿namespace Builder;
 
 public sealed class CriadorCasas
 {

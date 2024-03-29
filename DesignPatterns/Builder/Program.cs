@@ -1,4 +1,5 @@
-﻿namespace Builder.Casa.Casa;
+﻿
+namespace Builder;
 
 /*
  * O objetivo do padrão builder é facilitar a criação de objetos complexos de forma organizada.

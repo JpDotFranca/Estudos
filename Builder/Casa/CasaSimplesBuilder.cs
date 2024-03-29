@@ -1,4 +1,4 @@
-﻿namespace Builder;
+﻿namespace Builder.Casa.Casa;
 
 public class CasaSimplesBuilder : ICasaBuilder
 {

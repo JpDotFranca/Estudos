@@ -1,4 +1,4 @@
-﻿namespace Builder;
+﻿namespace Builder.Casa.Casa;
 
 /*
  * O objetivo do padrão builder é facilitar a criação de objetos complexos de forma organizada.
@@ -37,7 +37,7 @@ public class Program
 
         criadorCasas.MontarCasa();
         Casa casaLuxo = criadorCasas.Build();
-        
+
         criadorCasas.MontarCasa();
         criadorCasas = new(new CasaSimplesBuilder());
         Casa casaSimples = criadorCasas.Build();
